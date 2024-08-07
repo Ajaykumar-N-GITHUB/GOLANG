@@ -1,1 +1,20 @@
-This is a branc to learn GOLANG
+This is a branch to learn GOLANG
+
+
+
+In Go, variable scope determines where a variable can be accessed or modified within the code. Go has different levels of scope, including package-level scope, function-level scope, and block-level scope. Here's a detailed look at each with examples:
+
+1. Package-Level Scope
+Variables declared outside of functions, at the package level, are accessible throughout the entire package. They are typically used to define constants, global variables, or package-level configurations.
+
+2. Function-Level Scope
+Variables declared inside a function are local to that function. They are not accessible outside of the function in which they are declared.
+
+3. Block-Level Scope
+Variables declared inside a block (e.g., within braces {}) are local to that block. This includes blocks within functions, loops, or conditional statements.
+
+4. Shadowing
+Variable shadowing occurs when a variable declared within a local scope (e.g., in a function or block) has the same name as a variable in an outer scope. The inner variable "shadows" the outer variable.
+
+5. Short Variable Declarations
+Go allows for short variable declarations using the := syntax. This syntax can only be used within functions and automatically determines the variable’s type based on the assigned value.
