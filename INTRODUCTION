@@ -18,3 +18,52 @@ Variable shadowing occurs when a variable declared within a local scope (e.g., i
 
 5. Short Variable Declarations
 Go allows for short variable declarations using the := syntax. This syntax can only be used within functions and automatically determines the variable’s type based on the assigned value.
+
+
+
+
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % go build
+no Go files in /Users/ajaykumar-n/Documents/GOLANG-PROGAMS/GOLANG
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % ls
+INTRODUCTION                    Program-2-type_conversion       Program-4-bitwise               Program-6-
+Program-1-variables             Program-3-constants             Program-5-scope                 go.mod
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % cd Program-5-scope 
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % ls
+explorer        main_scope.go
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % go build
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % ls
+Program-5-scope explorer        main_scope.go
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % ls -la
+total 3984
+drwxr-xr-x@  6 ajaykumar-n  staff      192 Aug  8 11:41 .
+drwxr-xr-x@ 13 ajaykumar-n  staff      416 Aug  8 10:55 ..
+-rw-r--r--@  1 ajaykumar-n  staff     6148 Aug  7 23:05 .DS_Store
+-rwxr-xr-x@  1 ajaykumar-n  staff  2027456 Aug  8 11:41 Program-5-scope
+drwxr-xr-x@  4 ajaykumar-n  staff      128 Aug  7 19:38 explorer
+-rw-r--r--@  1 ajaykumar-n  staff      343 Aug  8 10:55 main_scope.go
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % ./Program-5-scope 
+7
+10
+10
+i am from explorer -> useme.go
+100
+100
+250
+This is from another package
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % rm -rf Program-5-scope 
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % ls
+explorer        main_scope.go
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % go env GOOS
+darwin
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % go env GOARCH
+amd64
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % GOOS=darwin go build
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % ls
+Program-5-scope explorer        main_scope.go
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % GOOS=linux go build
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % ls
+Program-5-scope explorer        main_scope.go
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % GOOS=windows go build
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % ls
+Program-5-scope         Program-5-scope.exe     explorer                main_scope.go
+ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % 

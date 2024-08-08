@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"golang-project/scope/explorer"
+	"golang-project/Program-5-scope/explorer"
 )
 
 // package level scope
