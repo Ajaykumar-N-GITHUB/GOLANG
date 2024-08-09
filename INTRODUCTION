@@ -67,3 +67,41 @@ ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % GOOS=windows go build
 ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % ls
 Program-5-scope         Program-5-scope.exe     explorer                main_scope.go
 ajaykumar-n@ANATTUDU-M-R5PC Program-5-scope % 
+
+
+
+
+
+
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git add -all
+error: did you mean `--all` (with two dashes)?
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git add --all 
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git commit -m "sixth"
+[main fdcbb88] sixth
+ 4 files changed, 19 insertions(+), 3 deletions(-)
+ create mode 100644 Program-7-tag/main.go
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git tag
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git push
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 972 bytes | 972.00 KiB/s, done.
+Total 8 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/Ajaykumar-N-GITHUB/GOLANG.git
+   c4d0d4d..fdcbb88  main -> main
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git tag V.0.0
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git push origin --tags
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ajaykumar-N-GITHUB/GOLANG.git
+ * [new tag]         V.0.0 -> V.0.0
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git tags
+git: 'tags' is not a git command. See 'git --help'.
+
+The most similar commands are
+        stage
+        tag
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git tag 
+V.0.0
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % 
