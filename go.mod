@@ -2,4 +2,6 @@ module golang-project
 
 go 1.22.0
 
-require github.com/Ajaykumar-N-GITHUB/fish v0.0.0-20240808182055-1f5a02c0c7d3
+require github.com/Ajaykumar-N-GITHUB/fish v0.0.0-20240808190519-33bd9c25cb56
+
+require github.com/Ajaykumar-N-GITHUB/marine v0.0.0-20240808190102-d87c9ab5ace7 // indirect
