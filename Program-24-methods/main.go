@@ -6,7 +6,7 @@ type person struct {
 	first string
 }
 
-// if we attach a struct type to a function then we will call it as methods
+// if we attach a struct type to a function then we will call it as method
 func (p person) test() string {
 	return fmt.Sprintln("I am", p.first)
 }

@@ -111,3 +111,42 @@ ajaykumar-n@ANATTUDU-M-R5PC GOLANG %
 
 
 There is no ternary if in Go, so you’ll need to use a full if statement even for basic conditions.
+
+
+
+
+Concurrency is not parallelism.
+
+In a single-core CPU, true parallelism is not possible because the single core can only execute one instruction or thread at a time. However, single-core CPUs can still use techniques like time-slicing (via context switching) to give the illusion of parallelism by rapidly switching between tasks, creating the effect of multitasking. This is managed by the operating system, which schedules different processes and threads to share the CPU time.
+
+For genuine parallelism, you need a multi-core CPU, where each core can handle its own thread simultaneously, allowing multiple threads or processes to run truly in parallel.
+
+
+
+
+Single-Core Limitations: A single-core CPU can execute only one instruction at a time. If you run two functions (like addition and subtraction) concurrently, the CPU will still switch between them but only execute one at any given moment.
+
+Concurrency vs. Parallelism:
+
+Concurrency: This involves managing multiple tasks by interleaving their execution. On a single-core CPU, concurrency is achieved through context switching, where the CPU rapidly switches between tasks to give the illusion that they are running simultaneously.
+Parallelism: This involves executing multiple tasks simultaneously on different cores. Parallelism is not possible on a single-core CPU, as there is only one core available for execution.
+
+
+
+Practical consideration
+
+For example if we are having code which will have more wait time(IO operations (IO bound tasks)) then concurrency on single core will be beneficial.but for cpu bound tasks concurrency is not acceptable.
+
+7
+
+
+
+
+
+
+
+
+
+
+
+
