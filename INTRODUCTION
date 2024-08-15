@@ -137,8 +137,20 @@ Practical consideration
 
 For example if we are having code which will have more wait time(IO operations (IO bound tasks)) then concurrency on single core will be beneficial.but for cpu bound tasks concurrency is not acceptable.
 
-7
 
+
+
+Heap vs stack in golang
+
+
+This two are playing a major role in memory management in Golang programming
+
+For example shorter usage variables will be stored in the stack and the longer usage variable will be stored in the heap so that once their respective usage is completed golang will automatically release their memory space
+
+
+To be more clear we are having a function and we are passing an argument as value type in this case it will get allocate in stack and once the function gets over the respective memory will be cleared and here no garbage collection is needed
+
+But if we sent the argument as pointer type compiler will escape the value from stack and stores it in heap and the garbage collector will start monitoring the usage once its usage is done. It will get removed by garbage collector.
 
 
 

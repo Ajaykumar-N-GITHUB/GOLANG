@@ -2,9 +2,8 @@ package main
 
 import "fmt"
 
-type call interface {
+type sample interface {
 	calling()
-	called()
 }
 
 type person struct {
@@ -12,23 +11,20 @@ type person struct {
 }
 
 type agent struct {
-	person
-	ltk bool
+	f_name string
 }
 
 func (r person) calling() {
 	fmt.Println(r.f_name)
+
 }
 
-func (r1 agent) called() {
-	fmt.Println(r1.person.f_name)
-	fmt.Println(r1.ltk)
+func (a agent) calling() {
+	fmt.Println(a.f_name)
 }
 
-func temp(c call) {
-	fmt.Println(c.calling())
-	fmt.Println(c.called())
-
+func inter_func(s sample) {
+	s.calling()
 }
 
 func main() {
@@ -37,13 +33,15 @@ func main() {
 	}
 
 	a1 := agent{
-		person: person{
-			f_name: "kumar",
-		},
-		ltk: true,
+		f_name: "Tina",
 	}
 
-	temp(p1)
-	temp(a1)
+	//way of calling
+	p1.calling()
+	a1.calling()
+
+	// another way of calling
+	inter_func(p1)
+	inter_func(a1)
 
 }
