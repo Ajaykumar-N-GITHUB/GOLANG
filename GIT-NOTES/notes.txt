@@ -192,3 +192,25 @@ The most similar commands are
 ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git tag 
 V.0.0
 ajaykumar-n@ANATTUDU-M-R5PC GOLANG % 
+
+
+creating new branch and raising pr
+ git add GIT-NOTES      
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git commit -m "git_notes"
+[branch2 0dde00c] git_notes
+ 1 file changed, 194 insertions(+)
+ create mode 100644 GIT-NOTES/notes.txt
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git branch
+  branch1
+* branch2
+  main
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git push origin branch2        
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 2.24 KiB | 2.24 MiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Ajaykumar-N-GITHUB/GOLANG.git
+   e800b0f..0dde00c  branch2 -> branch2
