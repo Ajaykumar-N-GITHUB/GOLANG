@@ -43,11 +43,12 @@ func main() {
 	ans1 := foo(1, 2, 3, 4, 5, 6, 7, 8)
 	fmt.Println(ans1)
 	xi := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+	ans3 := foo(xi...)
 	ans2 := bar(xi)
 	fmt.Println(ans2)
+	fmt.Println(ans3)
 }
 */
-
 //hands-on_3
 //defer function
 // It will run on LIFO order

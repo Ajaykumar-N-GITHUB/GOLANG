@@ -2,3 +2,5 @@ github.com/Ajaykumar-N-GITHUB/fish v0.0.0-20240808190519-33bd9c25cb56 h1:MJ2cxOJ
 github.com/Ajaykumar-N-GITHUB/fish v0.0.0-20240808190519-33bd9c25cb56/go.mod h1:FQechzPSRLi9tuIHv43FkvnyKMhX/nb3l0pCJq8ne0s=
 github.com/Ajaykumar-N-GITHUB/marine v0.0.0-20240808190102-d87c9ab5ace7 h1:cnw8RzIj3tF+z47Xf2di+BURlvyozB1F4kMHmpBAjps=
 github.com/Ajaykumar-N-GITHUB/marine v0.0.0-20240808190102-d87c9ab5ace7/go.mod h1:qThA7pv72xF9cpny2q7he9gpivj0szKKWL2+tCvkdqE=
+golang.org/x/crypto v0.27.0 h1:GXm2NjJrPaiv/h1tb2UH8QfgC/hOf/+z0p6PT8o1w7A=
+golang.org/x/crypto v0.27.0/go.mod h1:1Xngt8kV6Dvbssa53Ziq6Eqn0HqbZi5Z6R0ZpwQzt70=

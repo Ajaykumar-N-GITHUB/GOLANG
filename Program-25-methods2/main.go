@@ -20,6 +20,8 @@ func main() {
 	fmt.Println("area: ", r.area())
 	fmt.Println("perim:", r.perim())
 
+	
+
 	rp := &r
 	fmt.Println("area: ", rp.area())
 	fmt.Println("perim:", rp.perim())

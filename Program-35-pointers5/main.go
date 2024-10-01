@@ -15,10 +15,10 @@ func changenameptr(c2 *company, s1 string) {
 	c2.name = s1
 }
 
-func changename_noreturn(c1 company, s string) {
-	c1.name = s
+func changename_noreturn(c3 company, s string) {
+	c3.name = s
 	fmt.Println("this is from changename_noreturn inside print statement") //since it is getting stored in stack once the process comess out of this funtion the memory will get vanish
-	fmt.Println(c1)
+	fmt.Println(c3)
 }
 
 func main() {

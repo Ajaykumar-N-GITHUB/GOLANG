@@ -13,6 +13,8 @@ func main() {
 
 }
 
+//variadic parameter should be the last parameter
+
 func variadic(s string, ii ...int) int {
 	fmt.Println(ii)
 	fmt.Printf("%T\n", ii)

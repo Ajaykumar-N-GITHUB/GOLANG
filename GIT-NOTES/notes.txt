@@ -214,3 +214,12 @@ Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/Ajaykumar-N-GITHUB/GOLANG.git
    e800b0f..0dde00c  branch2 -> branch2
+
+Once the Pr gts approved you can merged it in ui, then come to you terminal and to merge it locally we need to run this again
+
+git merge branch2   
+Merge made by the 'ort' strategy.
+ GIT-NOTES/notes.txt | 22 ++++++++++++++++++++++
+ 1 file changed, 22 insertions(+)
+ajaykumar-n@ANATTUDU-M-R5PC GOLANG % git pull         
+Already up to date.
